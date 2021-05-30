@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<title>Contact|Aashik Villa</title>
+		<link rel="stylesheet"
+		  type="text/css"
+		  href="style.css"
+        />
+        <meta name="viewport" content="width=device-width">
+
+	</head>
+	<body>  
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          Aashik
+          <br class="web">
+          Villa
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div class="nav-links">
+          
+      <a href="index.html">Home</a>
+      <a href="About me.html">About me </a>
+      <a href="Drawing.html">Drawings</a>
+      <a href="Video.html">Videos</a>
+      <a href="Order.html">Order</a>
+      <a class="active" href="Contact.html">Contact me</a>
+      </div>
+    </div>
+    <!--
+		<nav>
+			<ul class="Nav-links">
+				<li class="item"><a href="index.html">Home</a></li>
+				<li class="item"><a href="About me.html">About me </a></li>
+				<li class="item"><a href="Drawing.html">Drawings</a></li>
+				<li class="item"><a href="Video.html">Videos</a></li>
+				<li class="item"><a href="Order.html">Order</a></li>
+				<li class="item active"><a href="Contact.html">Contact me</a></li>
+			</ul>
+		</nav>
+		<header class="Logo">
+      Aashik <br> Villa
+    </header>
+  -->
+		<div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Contact me</h1>
+          <p id="description" class="description text-center">
+            I will get back to you at the earliest.
+          </p>
+        </header>
+        <form id="survey-form" data-netlify="true" name="contact">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="phone-number"
+              >Phone Number<span class="clue">(optional)</span></label
+            >
+            <input
+              type="tel"
+              name="phone-number"
+              id="number"
+              class="form-control"
+              placeholder="Phone Number"
+            />
+          </div>
+            
+      
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+	</body>
+</html>

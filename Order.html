@@ -1,0 +1,269 @@
+<html>
+	<head>
+		<title>Order|Aashik Villa</title>
+		<link rel="stylesheet"
+		  type="text/css"
+		  href="style.css"
+        />
+        <meta name="viewport" content="width=device-width">
+
+	</head>
+	<body>  
+		<div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          Aashik
+          <br class="web">
+          Villa
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div class="nav-links">
+          
+      <a href="index.html">Home</a>
+      <a href="About me.html">About me </a>
+      <a href="Drawing.html">Drawings</a>
+      <a href="Video.html">Videos</a>
+      <a class="active" href="Order.html">Order</a>
+      <a href="Contact.html">Contact me</a>
+      </div>
+    </div>
+		
+		<!--/*
+		<div text-align="center" position="center">
+			<h1 text-align="center"> Order</h1>
+			<form >
+				<label>Name</label><br>
+				<input type="text" placeholder="First Name">
+				<input type="text" placeholder="Last Name">
+				<br><br>
+				<label>Email</label><br>
+				<input type="email" placeholder="email">
+				<br><br>
+				<label>Phone Number</label><br>
+				<input type="number" placeholder="Number">
+				<br><br>
+				<label>Number of people</label><br>
+				<select name="NOP" id="NOP">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</select>
+				<br><br>
+				<label>Size</label><br>
+				<label for="a5"><input type="radio" name="size" id="a5">A5</label>
+				<label for="a4"><input type="radio" name="size" id="a4">A4</label>
+				<label for="a3"><input type="radio" name="size" id="a3">A3</label>
+				<br><br>
+				<label>Type</label><br>
+				<label for="a5"><input type="radio" name="size" id="black and white">black and white</label>
+				<label for="a4"><input type="radio" name="size" id="color">color</label>
+				<label for="a3"><input type="radio" name="size" id="invert">Invert</label>
+				<br><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		*/-->
+		<div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Order</h1>
+          <p id="description" class="description text-center">
+            Thank you for showing interest to order from me.
+          </p>
+        </header>
+        <form id="survey-form" data-netlify="true" name="order">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="phone-number"
+              >Phone Number<span class="clue"></span></label
+            >
+            <input
+              type="number"
+              name="phone-number"
+              id="number"
+              min="1000000000"
+              max="9999999999"
+              class="form-control"
+              placeholder="Phone Number"
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="address">Address</label>
+            <input
+              type="text"
+              name="address"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Address"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="pin"
+              >Pin Code<span class="clue"></span></label
+            >
+            <input
+              type="number"
+              name="pin"
+              id="number"
+              min="100000"
+              max="999999"
+              class="form-control"
+              placeholder="Pin code"
+            />
+          </div>
+          <div class="form-group">
+            <p>How many people are present in the photo?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>No of people</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Which size drawing do you need?</p>
+            <label>
+              <input
+                name="size"
+                value="A2"
+                type="radio"
+                class="input-radio"
+                checked
+              />A2</label
+            >
+            <label>
+              <input
+                name="size"
+                value="A3"
+                type="radio"
+                class="input-radio"
+              />A3
+            </label>
+      
+            <label
+              ><input
+                name="size"
+                value="A4"
+                type="radio"
+                class="input-radio"
+              />A4</label
+            >
+
+            <label
+              ><input
+                name="user-recommend"
+                value="A5"
+                type="radio"
+                class="input-radio"
+              />A5</label
+            >
+          </div>
+
+          <div class="form-group">
+            <p>What type of drawing do you need?</p>
+            <label>
+              <input
+                name="type"
+                value="Black and White"
+                type="radio"
+                class="input-radio"
+                checked
+              />Black and White</label
+            >
+            <label>
+              <input
+                name="type"
+                value="Color"
+                type="radio"
+                class="input-radio"
+              />Color</label
+            >
+      
+            <label
+              ><input
+                name="type"
+                value="A4"
+                type="radio"
+                class="input-radio"
+              />Invert Art</label
+            >
+          </div>
+          <div class="form-group">
+            <p>Do you want progress video?</p>
+            <label>
+              <input
+                name="vid"
+                value="Yes"
+                type="radio"
+                class="input-radio"
+                checked
+              />Yes</label
+            >
+            <label>
+              <input
+                name="vid"
+                value="No"
+                type="radio"
+                class="input-radio"
+              />No</label
+            >
+          </div>
+
+          <div class="form-group" >
+            <label for="myfile" class="custom-file-upload">Upload Reference image<br>
+            <input 
+              type="file" 
+              id="myfile" 
+              name="myfile" 
+               />
+            </label>
+          </div>
+        
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Order
+            </button>
+          </div>
+        </form>
+      </div>
+		
+	</body>
+</html>
